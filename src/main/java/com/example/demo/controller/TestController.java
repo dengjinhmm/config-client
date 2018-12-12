@@ -9,12 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/config-client")
 public class TestController {
 
-	
 	@Value("${foo}")
 	private String foo;
-	
-	
-	@GetMapping(value="test")
+
+	@GetMapping(value = "test")
 	public String test() {
-		return foo;}
+		return foo;
+	}
 }

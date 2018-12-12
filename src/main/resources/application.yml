@@ -11,3 +11,12 @@ spring:
       profile: dev
       uri:
       - http://localhost:8888/
+      discovery:
+        enabled: true
+        service-id: config-server
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8889/eureka/
